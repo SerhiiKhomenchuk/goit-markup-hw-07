@@ -61,19 +61,21 @@ body {
     
     
 }
-.header {
-border-bottom: 1px solid #ECECEC;
-}
 .container {
     width: 1200px;
     padding: 0 15px;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.header {
+border-bottom: 1px solid #ECECEC;
+}
+
 
 .header__block {
     display: flex;
@@ -86,7 +88,7 @@ border-bottom: 1px solid #ECECEC;
     display: flex;
     
 }
-
+/*Логотип-Logo*/
 .logo {
     display: flex;
     align-items: center;
@@ -185,7 +187,7 @@ color: var(--color-logo);
     background-color: var(--color-hero-background);
     
     }
-.img-overlay {
+.hero__img-overlay {
     max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)),
@@ -234,7 +236,7 @@ color: var(--color-logo);
 /*Особливості-Feautures*/
 
 .features-title--visually-hidden {
-    width: 1px;
+   width: 1px;
    height: 1px;
    margin: 1px;
    border: 0;
@@ -456,8 +458,13 @@ fill: var(--color-background);
     justify-content: flex-start;
     margin-bottom: 20px;
 }
-.logo__invert {
+.footer__logo-invert {
     color: var(--color-background);
+}
+.footer__social-list {
+    fill: var(--color-background);
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list {
     display: flex;
@@ -517,11 +524,7 @@ fill: var(--color-background);
     line-height: 16px;
     letter-spacing: 0.03em;
 }
-.social-list__footer{
-    fill: var(--color-background);
-    background: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
  .footer-social-link:hover,
  .footer-social-link:focus {
     background-color: var(--color-hoover);
